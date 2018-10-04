@@ -1,1 +1,5 @@
 project(open_projects)
+add_compile_options(-std=c++11)
+add_subdirectory(src)
+add_subdirectory(inc)
+add_executable(ga_example src/ga_main.cpp inc/gaindividual.h inc/gaindividual.cpp)
